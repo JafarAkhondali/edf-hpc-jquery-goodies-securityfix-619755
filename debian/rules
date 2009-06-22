@@ -1,0 +1,33 @@
+#!/usr/bin/make -f
+%:
+	dh $@
+
+override_dh_auto_build:
+	yui-compressor event-drag/jquery.event.drag.js -o event-drag/jquery.event.drag.min.js
+	yui-compressor event-drop/jquery.event.drop.js -o event-drop/jquery.event.drop.min.js
+	yui-compressor easing/jquery.easing.js -o easing/jquery.easing.min.js
+	yui-compressor easing/jquery.easing.compatibility.js -o easing/jquery.easing.compatibility.min.js
+	yui-compressor galleriffic/js/jquery.galleriffic.js -o galleriffic/js/jquery.galleriffic.min.js
+	yui-compressor meiomask/jquery.meiomask.js -o meiomask/jquery.meiomask.min.js
+	yui-compressor mousewheel/jquery.mousewheel.js -o mousewheel/jquery.mousewheel.min.js
+	yui-compressor history/jquery.history.js -o  history/jquery.history.min.js
+	yui-compressor opacityrollover/jquery.opacityrollover.js -o opacityrollover/jquery.opacityrollover.min.js
+	yui-compressor jush/jush.js -o jush/jush.min.js
+	yui-compressor jfeed/build/dist/jquery.jfeed.js -o jfeed/build/dist/jquery.jfeed.min.js
+	yui-compressor form/jquery.form.js -o form/jquery.form.min.js
+	yui-compressor tipsy/src/javascripts/jquery.tipsy.js -o tipsy/src/javascripts/jquery.tipsy.min.js
+
+override_dh_auto_clean:
+	rm -f event-drag/jquery.event.drag.min.js
+	rm -f event-drop/jquery.event.drop.min.js
+	rm -f easing/jquery.easing.min.js
+	rm -f easing/jquery.easing.compatibility.min.js
+	rm -f galleriffic/js/jquery.galleriffic.min.js
+	rm -f meiomask/jquery.meiomask.min.js
+	rm -f mousewheel/jquery.mousewheel.min.js
+	rm -f history/jquery.history.min.js
+	rm -f opacityrollover/jquery.opacityrollover.min.js
+	rm -f jush/jush.min.js
+	rm -f jfeed/build/dist/jquery.jfeed.min.js
+	rm -f form/jquery.form.min.js
+	rm -f tipsy/src/javascripts/jquery.tipsy.min.js

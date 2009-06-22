@@ -1,0 +1,5 @@
+jquery-goodies (1) unstable; urgency=low
+
+  * Initial release (Closes: #522697, #601555, #605476)
+
+ -- Marcelo Jorge Vieira (metal) <metal@debian.org>  Thu, 17 Feb 2011 19:23:20 -0200
