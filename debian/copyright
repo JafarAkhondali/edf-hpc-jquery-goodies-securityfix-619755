@@ -62,9 +62,18 @@ Files: tipsy/*
 Copyright:(c) 2008-2009 Jason Frame <jason@onehackoranother.com>
 License: MIT
 
+Files: fancybox/*
+Copyright: Janis Skarnelis
+License: MIT | GPL
+
 Files: debian/*
 Copyright: (c) 2009-2011 Marcelo Jorge Vieira <metal@debian.org>
-License: MIT | GPL-2 | BSD | Apache-2.0
+License: MIT | GPL-2+ | BSD | Apache-2.0
+
+License: GPL
+
+  On Debian systems, the complete text of the GNU General Public License
+  can be found in `/usr/share/common-licenses/GPL'
 
 License: GPL-2
 

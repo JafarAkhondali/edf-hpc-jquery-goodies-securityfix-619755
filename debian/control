@@ -159,3 +159,20 @@ Homepage: http://onehackoranother.com/projects/jquery/tipsy/
 Description: jQuery Facebook-style tooltip plugin
  Tipsy is a jQuery plugin for creating a Facebook-like tooltips effect
  based on an anchor tag's title attribute.
+
+Package: libjs-jquery-fancybox
+Architecture: all
+Depends: ${misc:Depends}, libjs-jquery, libjs-jquery-easing, libjs-jquery-mousewheel
+Recommends: javascript-common
+Homepage: http://fancybox.net/
+Description: fancy lightbox alternative
+ FancyBox is a tool for displaying images, html content and multi-media
+ in a Mac-style "lightbox" that floats overtop of web page.
+ .
+  Features:
+    * Can display images, HTML elements, SWF movies, Iframes and
+      also Ajax requests
+    * Customizable through settings and CSS
+    * Groups related items and adds navigation.
+    * Support fancy transitions by using easing plugin
+    * Adds a nice drop shadow under the zoomed item
