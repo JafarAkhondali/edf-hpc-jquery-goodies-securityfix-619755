@@ -17,6 +17,7 @@ override_dh_auto_build:
 	yui-compressor form/jquery.form.js -o form/jquery.form.min.js
 	yui-compressor tipsy/src/javascripts/jquery.tipsy.js -o tipsy/src/javascripts/jquery.tipsy.min.js
 	yui-compressor fancybox/jquery.fancybox.js -o fancybox/jquery.fancybox.min.js
+	yui-compressor cookie/jquery.cookie.js -o cookie/jquery.cookie.min.js
 
 override_dh_auto_clean:
 	rm -f event-drag/jquery.event.drag.min.js
@@ -33,3 +34,4 @@ override_dh_auto_clean:
 	rm -f form/jquery.form.min.js
 	rm -f tipsy/src/javascripts/jquery.tipsy.min.js
 	rm -f fancybox/jquery.fancybox.min.js
+	rm -f cookie/jquery.cookie.min.js
