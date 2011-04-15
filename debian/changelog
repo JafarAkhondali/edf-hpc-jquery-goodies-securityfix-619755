@@ -1,3 +1,12 @@
+jquery-goodies (3-1) unstable; urgency=low
+
+  * Now it's a non-native package
+    + Renaming history folder to jquery-history;
+      Changelog versus changelog + changelog.Debian
+  * Switch to dpkg-source 3.0 (quilt) format
+
+ -- Marcelo Jorge Vieira (metal) <metal@debian.org>  Fri, 15 Apr 2011 17:28:14 -0300
+
 jquery-goodies (2) unstable; urgency=low
 
   * Added Fancybox (Closes: #613719)
