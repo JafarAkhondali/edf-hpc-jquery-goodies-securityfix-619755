@@ -74,6 +74,12 @@ Files: metadata/*
 Copyright: (c) 2006 John Resig, Yehuda Katz, J�örn Zaefferer, Paul McLanahan
 License: MIT | GPL
 
+Files: tablesorter/*
+Copyright:
+ (c) 2007 Christian Bach <christian@tablesorter.com>
+ (c) 2008 Brian Ghidinelli <brian@vfive.com>
+License: MIT | GPL
+
 Files: debian/*
 Copyright: (c) 2009-2011 Marcelo Jorge Vieira <metal@debian.org>
 License: MIT | GPL-2+ | BSD | Apache-2.0
