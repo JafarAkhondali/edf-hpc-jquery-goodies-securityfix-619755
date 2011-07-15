@@ -1,3 +1,15 @@
+jquery-goodies (4-1) unstable; urgency=low
+
+  * New Upstream Version
+    + Added jQuery-metadata
+    + Added jQuery-tablesorter, thanks Ben Finney (Closes: #631219, #584127)
+    + Added jQuery-treetable (Closes: #584403)
+    + Added jQuery-livequery
+    + Fixed wrong path to images in the jQuery-fancybox (Closes: #628029)
+  * Updated Standards-Version to 3.9.2 (no changes)
+
+ -- Marcelo Jorge Vieira (metal) <metal@debian.org>  Mon, 25 Jul 2011 15:39:18 -0300
+
 jquery-goodies (3-1) unstable; urgency=low
 
   * Now it's a non-native package
