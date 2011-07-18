@@ -249,3 +249,13 @@ Description: jQuery treeTable Plugin
      how a directory structure works in most file explorers).
    * Prepared for drag & drop of branches/nodes.
    * Unlimited tree depth.
+
+Package: libjs-jquery-livequery
+Architecture: all
+Depends: ${misc:Depends}, libjs-jquery
+Recommends: javascript-common
+Homepage: http://plugins.jquery.com/project/livequery
+Description: jQuery Live Query
+ Live Query (formerly Behavior) utilizes the power of jQuery selectors by
+ binding events or firing callbacks for matched elements auto-magically,
+ even after the page has been loaded and the DOM updated.
