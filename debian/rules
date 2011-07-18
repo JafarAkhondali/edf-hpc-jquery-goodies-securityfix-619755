@@ -21,6 +21,7 @@ override_dh_auto_build:
 	yui-compressor metadata/jquery.metadata.js -o metadata/jquery.metadata.min.js
 	yui-compressor tablesorter/jquery.tablesorter.js -o tablesorter/jquery.tablesorter.min.js
 	yui-compressor tablesorter/addons/pager/jquery.tablesorter.pager.js -o tablesorter/addons/pager/jquery.tablesorter.pager.min.js
+	yui-compressor treetable/src/jquery.treeTable.js -o treetable/src/jquery.treeTable.min.js
 
 override_dh_auto_clean:
 	rm -f event-drag/jquery.event.drag.min.js
@@ -41,3 +42,4 @@ override_dh_auto_clean:
 	rm -f metadata/jquery.metadata.min.js
 	rm -f tablesorter/jquery.tablesorter.min.js
 	rm -f tablesorter/addons/pager/jquery.tablesorter.pager.min.js
+	rm -f treetable/src/jquery.treeTable.min.js
