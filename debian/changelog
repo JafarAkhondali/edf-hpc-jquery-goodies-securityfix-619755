@@ -1,3 +1,13 @@
+jquery-goodies (5-1) unstable; urgency=low
+
+  * New Upstream Version
+    + Updated jQuery form from 2.63 to 3.09 (Closes: #656778)
+    + Added jQuery Countdown
+  * Updated Standards-Version to 3.9.3
+    + Machine-readable debian/copyright version 1.0
+
+ -- Marcelo Jorge Vieira (metal) <metal@debian.org>  Sun, 06 May 2012 21:48:26 -0300
+
 jquery-goodies (4-1) unstable; urgency=low
 
   * New Upstream Version
