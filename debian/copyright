@@ -88,6 +88,10 @@ Files: livequery/*
 Copyright: (c) 2008 Brandon Aaron (http://brandonaaron.net)
 License: MIT | GPL
 
+Files: countdown/*
+Copyright: 2008 Keith Wood <kbwood@iinet.com.au>
+License: MIT | GPL-2
+
 Files: debian/*
 Copyright: (c) 2009-2011 Marcelo Jorge Vieira <metal@debian.org>
 License: MIT | GPL-2+ | BSD | Apache-2.0

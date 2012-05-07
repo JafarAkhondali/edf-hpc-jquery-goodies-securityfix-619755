@@ -23,6 +23,7 @@ override_dh_auto_build:
 	yui-compressor tablesorter/addons/pager/jquery.tablesorter.pager.js -o tablesorter/addons/pager/jquery.tablesorter.pager.min.js
 	yui-compressor treetable/src/jquery.treeTable.js -o treetable/src/jquery.treeTable.min.js
 	yui-compressor livequery/jquery.livequery.js -o  livequery/jquery.livequery.min.js
+	yui-compressor countdown/jquery.countdown.js -o countdown/jquery.countdown.min.js
 
 override_dh_installchangelogs:
 	dh_installchangelogs --package libjs-jquery-livequery livequery/ChangeLog.markdown
@@ -49,3 +50,4 @@ override_dh_auto_clean:
 	rm -f tablesorter/addons/pager/jquery.tablesorter.pager.min.js
 	rm -f treetable/src/jquery.treeTable.min.js
 	rm -f livequery/jquery.livequery.min.js
+	rm -f countdown/jquery.countdown.min.js
