@@ -1,3 +1,11 @@
+jquery-goodies (6-1) unstable; urgency=low
+
+  * New Upstream Version
+    + Updated jQuery Tipsy to 1.0.0a (Closes: #676181)
+  * Fixing tipsy path in README.Debian
+
+ -- Marcelo Jorge Vieira (metal) <metal@debian.org>  Tue, 05 Jun 2012 19:52:12 -0300
+
 jquery-goodies (5-1) unstable; urgency=low
 
   * New Upstream Version
