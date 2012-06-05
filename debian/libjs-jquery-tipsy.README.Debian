@@ -8,7 +8,7 @@ lines in your html header:
     src="/javascript/jquery/jquery.js"></script>
 
     <script language="javascript" type="text/javascript"
-    src="/javascript/jquery-tipsy/javascript/jquery.tipsy.js"></script>
+    src="/javascript/jquery-tipsy/jquery.tipsy.js"></script>
 
     <link rel="stylesheet" href="/javascript/jquery-tipsy/stylesheets/tipsy.css"
     type="text/css" />
