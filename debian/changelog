@@ -1,3 +1,10 @@
+jquery-goodies (7-1) unstable; urgency=low
+
+  * New Upstream Version
+    + Added jQuery resize
+
+ -- Per Andersson <avtobiff@gmail.com>  Fri, 14 Sep 2012 23:20:16 +0200
+
 jquery-goodies (6-1) unstable; urgency=low
 
   * New Upstream Version

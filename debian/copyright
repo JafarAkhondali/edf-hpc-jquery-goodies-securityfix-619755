@@ -92,6 +92,11 @@ Files: countdown/*
 Copyright: 2008 Keith Wood <kbwood@iinet.com.au>
 License: MIT or GPL-2
 
+Files: resize/*
+Copyright: 2012 Ben Alman <cowboy@rj3.net>
+Homepage: http://benalman.com/projects/jquery-resize-plugin/
+License: MIT or GPL-2
+
 Files: debian/*
 Copyright: (c) 2009-2011 Marcelo Jorge Vieira <metal@debian.org>
 License: MIT or GPL-2+ or BSD or Apache-2.0

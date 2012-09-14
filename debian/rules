@@ -24,6 +24,7 @@ override_dh_auto_build:
 	yui-compressor treetable/src/jquery.treeTable.js -o treetable/src/jquery.treeTable.min.js
 	yui-compressor livequery/jquery.livequery.js -o  livequery/jquery.livequery.min.js
 	yui-compressor countdown/jquery.countdown.js -o countdown/jquery.countdown.min.js
+	yui-compressor resize/jquery.ba-resize.js -o resize/jquery.ba-resize.min.js
 
 override_dh_installchangelogs:
 	dh_installchangelogs --package libjs-jquery-livequery livequery/ChangeLog.markdown
@@ -51,3 +52,4 @@ override_dh_auto_clean:
 	rm -f treetable/src/jquery.treeTable.min.js
 	rm -f livequery/jquery.livequery.min.js
 	rm -f countdown/jquery.countdown.min.js
+	rm -f resize/jquery.ba-resize.min.js
