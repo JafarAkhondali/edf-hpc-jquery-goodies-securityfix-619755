@@ -2,8 +2,11 @@ jquery-goodies (7-1) unstable; urgency=low
 
   * New Upstream Version
     + Added jQuery resize
+    + Added jQuery Uploadify
+  * Add myself to uploaders
+  * Updated Standards-Version to 3.9.4, no changes
 
- -- Per Andersson <avtobiff@gmail.com>  Fri, 14 Sep 2012 23:20:16 +0200
+ -- Per Andersson <avtobiff@gmail.com>  Fri, 12 Oct 2012 21:42:01 +0200
 
 jquery-goodies (6-1) unstable; urgency=low
 
