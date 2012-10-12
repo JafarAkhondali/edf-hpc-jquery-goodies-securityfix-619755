@@ -6,6 +6,6 @@ Abstract: This documentation gives information for
 Section: Programming/Javascript
 
 Format: HTML
-Index: /usr/share/doc/libjs-jquery-resize/html/index.html
-Files: /usr/share/doc/libjs-jquery-resize/html/index.html
-       /usr/share/doc/libjs-jquery-resize/html/*/*.html
+Index: /usr/share/doc/libjs-jquery-resize-doc/index.html
+Files: /usr/share/doc/libjs-jquery-resize-doc/index.html
+       /usr/share/doc/libjs-jquery-resize-doc/*/*.html
