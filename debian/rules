@@ -25,6 +25,7 @@ override_dh_auto_build:
 	yui-compressor livequery/jquery.livequery.js -o  livequery/jquery.livequery.min.js
 	yui-compressor countdown/jquery.countdown.js -o countdown/jquery.countdown.min.js
 	yui-compressor resize/jquery.ba-resize.js -o resize/jquery.ba-resize.min.js
+	yui-compressor uploadify/jquery.uploadify.js -o uploadify/jquery.uploadify.min.js
 
 override_dh_installchangelogs:
 	dh_installchangelogs --package libjs-jquery-livequery livequery/ChangeLog.markdown
@@ -53,3 +54,4 @@ override_dh_auto_clean:
 	rm -f livequery/jquery.livequery.min.js
 	rm -f countdown/jquery.countdown.min.js
 	rm -f resize/jquery.ba-resize.min.js
+	rm -f uploadify/jquery.uploadify.min.js

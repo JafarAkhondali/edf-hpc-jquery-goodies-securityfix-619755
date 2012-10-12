@@ -286,3 +286,20 @@ Description: jQuery resize (doc)
  than window.
  .
  This package contains the HTML documentation.
+
+Package: libjs-jquery-uploadify
+Architecture: all
+Depends: ${misc:Depends}, libjs-jquery, libjs-swfobject, libjs-swfupload
+Homepage: http://uploadify.com/
+Description: plugin for easy multiple file upload
+ Uploadify is a jQuery plugin that allows you to easily add multiple file
+ upload functionality to your website.
+ .
+ Features:
+  * Multiple file uploads
+  * Drag and drop
+  * Real-time progress indicators
+  * Custom upload restrictions
+  * Extreme customization
+ .
+ This package contains the Flash version of Uploadify.

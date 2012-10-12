@@ -1,0 +1,3 @@
+uploadify/*.js                  /usr/share/javascript/jquery-uploadify
+uploadify/uploadify.css         /usr/share/javascript/jquery-uploadify
+uploadify/uploadify-cancel.png  /usr/share/javascript/jquery-uploadify

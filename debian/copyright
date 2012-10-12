@@ -97,6 +97,11 @@ Copyright: 2012 Ben Alman <cowboy@rj3.net>
 Homepage: http://benalman.com/projects/jquery-resize-plugin/
 License: MIT or GPL-2
 
+Files: uploadify/*
+Copyright: 2012 Reactive Apps, Ronnie Garcia
+Homepage: http://uploadify.com/
+License: MIT
+
 Files: debian/*
 Copyright: (c) 2009-2011 Marcelo Jorge Vieira <metal@debian.org>
 License: MIT or GPL-2+ or BSD or Apache-2.0

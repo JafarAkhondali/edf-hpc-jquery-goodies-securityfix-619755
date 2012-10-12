@@ -1,0 +1,19 @@
+libjs-jquery-uploadify for Debian
+---------------------------------
+
+In order to make use of uploadify in your html, include the following
+lines in your html header
+
+    <script language="javascript" type="text/javascript"
+    src="/javascript/jquery/jquery.js"></script>
+
+    <script language="javascript" type="text/javascript"
+    src="/javascript/swfobject/swfobject.js"></script>
+
+    <script language="javascript" type="text/javascript"
+    src="/javascript/swfupload/swfupload.js"></script>
+
+    <script language="javascript" type="text/javascript"
+    src="/javascript/jquery-uploadify/jquery.uploadify.js"></script>
+
+ -- Per Andersson <avtobiff@gmail.com>  Fri, 12 Oct 2012 21:54:24 +0200
