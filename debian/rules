@@ -29,6 +29,7 @@ override_dh_auto_build:
 
 override_dh_installchangelogs:
 	dh_installchangelogs --package libjs-jquery-livequery livequery/ChangeLog.markdown
+	dh_installchangelogs --package libjs-jquery-uploadify uploadify/Change\ Log.txt
 	dh_installchangelogs
 
 override_dh_auto_clean:
