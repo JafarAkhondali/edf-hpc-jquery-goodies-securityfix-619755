@@ -279,6 +279,7 @@ Description: jQuery resize
  than window.
 
 Package: libjs-jquery-resize-doc
+Section: doc
 Architecture: all
 Depends: ${misc:Depends}
 Homepage: http://benalman.com/projects/jquery-resize-plugin/
