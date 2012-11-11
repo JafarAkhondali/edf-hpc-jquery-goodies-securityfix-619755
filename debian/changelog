@@ -1,4 +1,4 @@
-jquery-goodies (7-1) unstable; urgency=low
+jquery-goodies (7-1) experimental; urgency=low
 
   * New Upstream Version
     + Added jQuery resize
