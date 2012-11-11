@@ -16,4 +16,7 @@ lines in your html header
     <script language="javascript" type="text/javascript"
     src="/javascript/jquery-uploadify/jquery.uploadify.js"></script>
 
+    <link rel="stylesheet" type="text/css"
+    href="/javascript/jquery-uploadify/uploadify.css">
+
  -- Per Andersson <avtobiff@gmail.com>  Fri, 12 Oct 2012 21:54:24 +0200
