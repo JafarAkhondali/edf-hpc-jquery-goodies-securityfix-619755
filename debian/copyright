@@ -102,6 +102,10 @@ Copyright: 2012 Reactive Apps, Ronnie Garcia
 Homepage: http://uploadify.com/
 License: MIT
 
+Files: slides/*
+Copyright: 2011 Nathan Searles, http://nathansearles.com
+License: Apache-2.0
+
 Files: debian/*
 Copyright: (c) 2009-2011 Marcelo Jorge Vieira <metal@debian.org>
 License: MIT or GPL-2+ or BSD or Apache-2.0

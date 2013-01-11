@@ -305,3 +305,13 @@ Description: plugin for easy multiple file upload
   * Extreme customization
  .
  This package contains the Flash version of Uploadify.
+
+Package: libjs-jquery-slides
+Architecture: all
+Depends: ${misc:Depends}, libjs-jquery
+Recommends: javascript-common
+Homepage: http://slidesjs.com/
+Description: Simple slideshow plugin for jQuery
+ A simple slideshow plugin for jQuery packed with a useful set of features to
+ help novice and advanced developers alike create elegant and user-friendly
+ slideshows.
