@@ -3,7 +3,8 @@ Section: web
 Priority: optional
 Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
 Uploaders: Marcelo Jorge Vieira (metal) <metal@debian.org>,
-           Per Andersson <avtobiff@gmail.com>
+           Per Andersson <avtobiff@gmail.com>,
+           Agustin Henze <tin@sluc.org.ar>
 Build-Depends: debhelper (>= 7.0.50~), yui-compressor
 Standards-Version: 3.9.4
 Vcs-Browser: http://git.debian.org/?p=pkg-javascript/jquery-goodies.git
