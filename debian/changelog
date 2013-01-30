@@ -1,3 +1,9 @@
+jquery-goodies (8-2) unstable; urgency=low
+
+  * Fixed jquery-countdown.pack.js symlink (Closes: #699199) 
+
+ -- Marcelo Jorge Vieira (metal) <metal@debian.org>  Wed, 30 Jan 2013 21:30:30 -0200
+
 jquery-goodies (8-1) unstable; urgency=low
 
   * Added jQuery slides (Closes: #697234)
