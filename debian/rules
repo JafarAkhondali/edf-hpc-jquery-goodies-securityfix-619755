@@ -3,30 +3,30 @@
 	dh $@
 
 override_dh_auto_build:
-	yui-compressor event-drag/jquery.event.drag.js -o event-drag/jquery.event.drag.min.js
-	yui-compressor event-drop/jquery.event.drop.js -o event-drop/jquery.event.drop.min.js
-	yui-compressor easing/jquery.easing.js -o easing/jquery.easing.min.js
-	yui-compressor easing/jquery.easing.compatibility.js -o easing/jquery.easing.compatibility.min.js
-	yui-compressor galleriffic/js/jquery.galleriffic.js -o galleriffic/js/jquery.galleriffic.min.js
-	yui-compressor meiomask/jquery.meiomask.js -o meiomask/jquery.meiomask.min.js
-	yui-compressor mousewheel/jquery.mousewheel.js -o mousewheel/jquery.mousewheel.min.js
-	yui-compressor jquery-history/jquery.history.js -o  jquery-history/jquery.history.min.js
-	yui-compressor opacityrollover/jquery.opacityrollover.js -o opacityrollover/jquery.opacityrollover.min.js
-	yui-compressor jush/jush.js -o jush/jush.min.js
-	yui-compressor jfeed/build/dist/jquery.jfeed.js -o jfeed/build/dist/jquery.jfeed.min.js
-	yui-compressor form/jquery.form.js -o form/jquery.form.min.js
-	yui-compressor tipsy/src/javascripts/jquery.tipsy.js -o tipsy/src/javascripts/jquery.tipsy.min.js
-	yui-compressor fancybox/jquery.fancybox.js -o fancybox/jquery.fancybox.min.js
-	yui-compressor cookie/jquery.cookie.js -o cookie/jquery.cookie.min.js
-	yui-compressor metadata/jquery.metadata.js -o metadata/jquery.metadata.min.js
-	yui-compressor tablesorter/jquery.tablesorter.js -o tablesorter/jquery.tablesorter.min.js
-	yui-compressor tablesorter/addons/pager/jquery.tablesorter.pager.js -o tablesorter/addons/pager/jquery.tablesorter.pager.min.js
-	yui-compressor treetable/src/jquery.treeTable.js -o treetable/src/jquery.treeTable.min.js
-	yui-compressor livequery/jquery.livequery.js -o  livequery/jquery.livequery.min.js
-	yui-compressor countdown/jquery.countdown.js -o countdown/jquery.countdown.min.js
-	yui-compressor resize/jquery.ba-resize.js -o resize/jquery.ba-resize.min.js
-	yui-compressor uploadify/jquery.uploadify.js -o uploadify/jquery.uploadify.min.js
-	yui-compressor slides/source/slides.jquery.js -o slides/source/slides.min.jquery.js
+	uglifyjs -o event-drag/jquery.event.drag.min.js event-drag/jquery.event.drag.js
+	uglifyjs -o event-drop/jquery.event.drop.min.js event-drop/jquery.event.drop.js
+	uglifyjs -o easing/jquery.easing.min.js easing/jquery.easing.js
+	uglifyjs -o easing/jquery.easing.compatibility.min.js easing/jquery.easing.compatibility.js
+	uglifyjs -o galleriffic/js/jquery.galleriffic.min.js galleriffic/js/jquery.galleriffic.js
+	uglifyjs -o meiomask/jquery.meiomask.min.js meiomask/jquery.meiomask.js
+	uglifyjs -o mousewheel/jquery.mousewheel.min.js mousewheel/jquery.mousewheel.js
+	uglifyjs -o jquery-history/jquery.history.min.js jquery-history/jquery.history.js
+	uglifyjs -o opacityrollover/jquery.opacityrollover.min.js opacityrollover/jquery.opacityrollover.js
+	uglifyjs -o jush/jush.min.js jush/jush.js
+	uglifyjs -o jfeed/build/dist/jquery.jfeed.min.js jfeed/build/dist/jquery.jfeed.js
+	uglifyjs -o form/jquery.form.min.js form/jquery.form.js
+	uglifyjs -o tipsy/src/javascripts/jquery.tipsy.min.js tipsy/src/javascripts/jquery.tipsy.js
+	uglifyjs -o fancybox/jquery.fancybox.min.js fancybox/jquery.fancybox.js
+	uglifyjs -o cookie/jquery.cookie.min.js cookie/jquery.cookie.js
+	uglifyjs -o metadata/jquery.metadata.min.js metadata/jquery.metadata.js
+	uglifyjs -o tablesorter/jquery.tablesorter.min.js tablesorter/jquery.tablesorter.js
+	uglifyjs -o tablesorter/addons/pager/jquery.tablesorter.pager.min.js tablesorter/addons/pager/jquery.tablesorter.pager.js
+	uglifyjs -o treetable/src/jquery.treeTable.min.js treetable/src/jquery.treeTable.js
+	uglifyjs -o livequery/jquery.livequery.min.js livequery/jquery.livequery.js
+	uglifyjs -o countdown/jquery.countdown.min.js countdown/jquery.countdown.js
+	uglifyjs -o resize/jquery.ba-resize.min.js resize/jquery.ba-resize.js
+	uglifyjs -o uploadify/jquery.uploadify.min.js uploadify/jquery.uploadify.js
+	uglifyjs -o slides/source/slides.min.jquery.js slides/source/slides.jquery.js
 
 override_dh_installchangelogs:
 	dh_installchangelogs --package libjs-jquery-livequery livequery/ChangeLog.markdown
