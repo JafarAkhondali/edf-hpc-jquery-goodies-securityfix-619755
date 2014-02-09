@@ -52,7 +52,7 @@ Description: jQuery Galleriffic plugin
     * API for controlling the gallery with custom controls
     * Support for image captions
     * Flexible configuration
-    * Graceful degradation when javascript is not available
+    * Graceful degradation when JavaScript is not available
     * Support for multiple galleries per page
 
 Package: libjs-jquery-jfeed
@@ -130,7 +130,7 @@ Recommends: javascript-common
 Homepage: http://tkyk.github.com/jquery-history-plugin/
 Description: jQuery history plugin
  A jQuery history plugin helps you to support back/forward buttons and
- bookmarks in your javascript applications. You can store the application
+ bookmarks in your JavaScript applications. You can store the application
  state into URL hash and restore the state from it.
 
 Package: libjs-jquery-opacityrollover
