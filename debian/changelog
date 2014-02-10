@@ -1,3 +1,16 @@
+jquery-goodies (9-1) unstable; urgency=low
+
+  * Use uglifyjs to compress JavaScript instead of yui-compressor
+    + Thanks Jerome Charaoui <jerome@riseup.net> (Closes: #737177)
+  * Control: Replacing 'javascript' with 'JavaScript' (Closes: #657196)
+    + Thanks Filipus Klutiero <chealer@gmail.com>
+  * Added jQuery FullScreen (Closes: #736552)
+    + Thanks Jerome Charaoui <jerome@riseup.net>
+  * Updating jQuery Cookie for 1.4.0 (Closes: #734763)
+    + Thanks Jerome Charaoui <jerome@riseup.net>
+
+ -- Marcelo Jorge Vieira (metal) <metal@debian.org>  Sun, 09 Feb 2014 22:25:38 -0200
+
 jquery-goodies (8-2) unstable; urgency=low
 
   * Fixed jquery-countdown.pack.js symlink (Closes: #699199) 
