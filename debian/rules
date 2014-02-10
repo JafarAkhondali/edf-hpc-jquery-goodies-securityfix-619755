@@ -30,6 +30,7 @@ override_dh_auto_build:
 	uglifyjs -o fullscreen/fullscreen/jquery.fullscreen.min.js fullscreen/fullscreen/jquery.fullscreen.js
 
 override_dh_installchangelogs:
+	dh_installchangelogs --package libjs-jquery-cookie cookie/CHANGELOG.md
 	dh_installchangelogs --package libjs-jquery-livequery livequery/ChangeLog.markdown
 	dh_installchangelogs --package libjs-jquery-uploadify uploadify/Change\ Log.txt
 	dh_installchangelogs --package libjs-jquery-slides slides/README.textile
