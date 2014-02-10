@@ -68,7 +68,8 @@ License: MIT or GPL
 
 Files: cookie/*
 Copyright: (c) 2010 Klaus Hartl (stilbuero.de)
-License: MIT or GPL
+Homepage: https://github.com/carhartl/jquery-cookie
+License: MIT
 
 Files: metadata/*
 Copyright: (c) 2006 John Resig, Yehuda Katz, J�örn Zaefferer, Paul McLanahan
