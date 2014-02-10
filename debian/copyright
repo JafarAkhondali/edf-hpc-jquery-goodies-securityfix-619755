@@ -106,6 +106,11 @@ Files: slides/*
 Copyright: 2011 Nathan Searles, http://nathansearles.com
 License: Apache-2.0
 
+Files: fullscreen/*
+Copyright: 2012 Martin Angelov
+Homepage: http://tutorialzine.com/2012/02/enhance-your-website-fullscreen-api/
+License: MIT
+
 Files: debian/*
 Copyright: (c) 2009-2011 Marcelo Jorge Vieira <metal@debian.org>
 License: MIT or GPL-2+ or BSD or Apache-2.0

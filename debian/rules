@@ -27,6 +27,7 @@ override_dh_auto_build:
 	uglifyjs -o resize/jquery.ba-resize.min.js resize/jquery.ba-resize.js
 	uglifyjs -o uploadify/jquery.uploadify.min.js uploadify/jquery.uploadify.js
 	uglifyjs -o slides/source/slides.min.jquery.js slides/source/slides.jquery.js
+	uglifyjs -o fullscreen/fullscreen/jquery.fullscreen.min.js fullscreen/fullscreen/jquery.fullscreen.js
 
 override_dh_installchangelogs:
 	dh_installchangelogs --package libjs-jquery-livequery livequery/ChangeLog.markdown
@@ -59,3 +60,4 @@ override_dh_auto_clean:
 	rm -f resize/jquery.ba-resize.min.js
 	rm -f uploadify/jquery.uploadify.min.js
 	rm -f slides/source/slides.min.jquery.js
+	rm -f fullscreen/fullscreen/jquery.fullscreen.min.js
