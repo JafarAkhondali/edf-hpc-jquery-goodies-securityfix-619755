@@ -110,7 +110,9 @@ test('invalid URL encoding', function () {
 	expect(1);
 	document.cookie = 'bad=foo%';
 	strictEqual($.cookie('bad'), undefined, "won't throw exception, returns undefined");
-	document.cookie = 'bad=foo'; // Allow to be deleted...
+	// Delete manually here because it requires raw === true...
+	$.cookie.raw = true;
+	$.removeCookie('bad');
 });
 
 asyncTest('malformed cookie value in IE (#88, #117)', function () {
@@ -152,6 +154,9 @@ test('Call to read all with a badly encoded cookie', function () {
 	document.cookie = 'bad=foo%';
 	document.cookie = 'good=foo';
 	deepEqual($.cookie(), { good: 'foo' }, 'returns object containing all decodable cookies');
+	// Delete manually here because it requires raw === true...
+	$.cookie.raw = true;
+	$.removeCookie('bad');
 });
 
 
@@ -189,6 +194,18 @@ test('expires option as days from now', function () {
 		'should write the cookie string with expires');
 });
 
+test('expires option as fraction of a day', function () {
+	expect(1);
+
+	var now = new Date().getTime();
+	var expires = Date.parse($.cookie('c', 'v', { expires: 0.5 }).replace(/.+expires=/, ''));
+
+	// When we were using Date.setDate() fractions have been ignored
+	// and expires resulted in the current date. Allow 1000 milliseconds
+	// difference for execution time.
+	ok(expires > now + 1000, 'should write expires attribute with the correct date');
+});
+
 test('expires option as Date instance', function () {
 	expect(1);
 	var sevenDaysFromNow = new Date();
@@ -213,7 +230,8 @@ test('raw = true', function () {
 	expect(1);
 	$.cookie.raw = true;
 	strictEqual($.cookie('c[1]', 'v[1]'), 'c[1]=v[1]', 'should not encode');
-	$.each($.cookie(), $.removeCookie);
+	// Delete manually here because it requires raw === true...
+	$.removeCookie('c[1]');
 });
 
 test('json = true', function () {
@@ -238,42 +256,46 @@ test('deletion', function () {
 	strictEqual(document.cookie, '', 'should delete the cookie');
 });
 
-test('return', function () {
-	expect(2);
-	strictEqual($.removeCookie('c'), false, "return false if the cookie wasn't found");
-
+test('when sucessfully deleted', function () {
+	expect(1);
 	$.cookie('c', 'v');
-	strictEqual($.removeCookie('c'), true, 'return true if the cookie was found');
+	strictEqual($.removeCookie('c'), true, 'returns true');
 });
 
-test('with options', function () {
-	expect(3);
-	var originalCookie = $.cookie;
-	var callCount = 0;
+test('when deletion failed', function () {
+	expect(1);
+	$.cookie('c', 'v');
 
+	var originalCookie = $.cookie;
 	$.cookie = function () {
-		callCount++;
-		if (callCount === 1)  {
-			// see https://github.com/carhartl/jquery-cookie/issues/99
-			strictEqual(arguments.length, 1, 'look up cookie instead of accidently writing a new');
-			return 'cookie'; // act as if a cookie was found...
-		}
-		if (callCount === 2) {
-			strictEqual(arguments[2].foo, 'bar', 'pass along options when deleting cookie');
+		// Stub deletion...
+		if (arguments.length === 1) {
+			return originalCookie.apply(null, arguments);
 		}
 	};
 
-	$.removeCookie('c', { foo: 'bar' });
-	strictEqual(callCount, 2);
+	strictEqual($.removeCookie('c'), false, 'returns false');
 
 	$.cookie = originalCookie;
+});
+
+test('when cookie does not exist', function () {
+	expect(1);
+	strictEqual($.removeCookie('c'), false, 'returns false');
+});
+
+test('with options', function () {
+	expect(1);
+	var options = { path: '/' };
+	$.cookie('c', 'v', options);
+	$.removeCookie('c', options);
+	strictEqual(document.cookie, '', 'should delete the cookie');
 });
 
 test('passing options reference', function () {
 	expect(1);
 	var options = { path: '/' };
 	$.cookie('c', 'v', options);
-
 	$.removeCookie('c', options);
 	deepEqual(options, { path: '/' }, "won't alter options object");
 });

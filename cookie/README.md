@@ -1,8 +1,13 @@
-# jquery.cookie [![Build Status](https://travis-ci.org/carhartl/jquery-cookie.png?branch=master)](https://travis-ci.org/carhartl/jquery-cookie)
-
-[![Selenium Test Status](https://saucelabs.com/browser-matrix/carhartl.svg)](https://saucelabs.com/u/carhartl)
+# jquery.cookie [![Build Status](https://travis-ci.org/carhartl/jquery-cookie.png?branch=master)](https://travis-ci.org/carhartl/jquery-cookie) [![Code Climate](https://codeclimate.com/github/carhartl/jquery-cookie.png)](https://codeclimate.com/github/carhartl/jquery-cookie)
 
 A simple, lightweight jQuery plugin for reading, writing and deleting cookies.
+
+**If you're viewing this at https://github.com/carhartl/jquery-cookie, you're reading the documentation for the master branch.
+[View documentation for the latest release (1.4.1).](https://github.com/carhartl/jquery-cookie/tree/v1.4.1)**
+
+## Build Status Matrix
+
+[![Selenium Test Status](https://saucelabs.com/browser-matrix/jquery-cookie.svg)](https://saucelabs.com/u/jquery-cookie)
 
 ## Installation
 
@@ -15,7 +20,7 @@ Include script *after* the jQuery library (unless you are packaging scripts some
 **Do not include the script directly from GitHub (http://raw.github.com/...).** The file is being served as text/plain and as such being blocked
 in Internet Explorer on Windows 7 for instance (because of the wrong MIME type). Bottom line: GitHub is not a CDN.
 
-The plugin can also be loaded as AMD module.
+The plugin can also be loaded as AMD or CommonJS module.
 
 ## Usage
 
