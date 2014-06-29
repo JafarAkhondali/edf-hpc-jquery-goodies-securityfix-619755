@@ -130,8 +130,8 @@ Recommends: javascript-common
 Homepage: http://tkyk.github.com/jquery-history-plugin/
 Description: jQuery history plugin
  A jQuery history plugin helps you to support back/forward buttons and
- bookmarks in your JavaScript applications. You can store the application
- state into URL hash and restore the state from it.
+ bookmarks in your JavaScript applications. The application state can be
+ stored into a URL hash and restore the state from it.
 
 Package: libjs-jquery-opacityrollover
 Architecture: all
