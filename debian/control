@@ -183,7 +183,7 @@ Package: libjs-jquery-cookie
 Architecture: all
 Depends: ${misc:Depends}, libjs-jquery
 Recommends: javascript-common
-Homepage: http://plugins.jquery.com/project/Cookie
+Homepage: http://plugins.jquery.com/cookie/
 Description: jQuery cookie plugin
  A simple, lightweight utility plugin for reading, writing and
  deleting cookies.
