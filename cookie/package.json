@@ -1,8 +1,8 @@
 {
   "name": "jquery.cookie",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "A simple, lightweight jQuery plugin for reading, writing and deleting cookies.",
-  "main": "Gruntfile.js",
+  "main": "jquery.cookie.js",
   "directories": {
     "test": "test"
   },
@@ -27,5 +27,24 @@
     "grunt-saucelabs": "~4.1.1",
     "grunt-contrib-connect": "~0.5.0",
     "gzip-js": "~0.3.0"
+  },
+  "volo": {
+    "url": "https://raw.github.com/carhartl/jquery-cookie/v{version}/jquery.cookie.js"
+  },
+  "jspm": {
+    "main": "jquery.cookie",
+    "files": ["jquery.cookie.js"],
+    "buildConfig": {
+      "uglify": true
+    }
+  },
+  "jam": {
+    "dependencies": {
+      "jquery": ">=1.2"
+    },
+    "main": "jquery.cookie.js",
+    "include": [
+      "jquery.cookie.js"
+    ]
   }
 }
