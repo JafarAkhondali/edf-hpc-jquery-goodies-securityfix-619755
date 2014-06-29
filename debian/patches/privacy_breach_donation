@@ -1,0 +1,30 @@
+Index: jquery-goodies/tablesorter/docs/index.html
+===================================================================
+--- jquery-goodies.orig/tablesorter/docs/index.html
++++ jquery-goodies/tablesorter/docs/index.html
+@@ -49,25 +49,6 @@
+ 	
+ 	<p> </p>
+ 
+-
+-
+-	<!--
+-	<p class="tip">
+-		<em>Help!</em> keep tablesorter.com up and running. If you like tablesorter, have a couple of bucks over or just feel like it. Please donate.</p>
+-	</p>
+-	
+-	<form name="_xclick" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+-	<input type="hidden" name="cmd" value="_xclick">
+-	<input type="hidden" name="business" value="christian.bach@polyester.se">
+-	<input type="hidden" name="item_name" value="Tablesorter donation">
+-	<input type="hidden" name="currency_code" value="USD">
+-	<input type="hidden" name="amount" value="10.00">
+-	<input type="image" src="https://www.paypal.com/en_US/i/btn/x-click-but04.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
+-	</form>
+-	-->
+-	
+-	
+-	
+ 	<a name="Contents"></a>
+ 	<h1>Contents</h1>
+ 	<ol>
