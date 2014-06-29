@@ -1,3 +1,18 @@
+jquery-goodies (10-1) unstable; urgency=low
+
+  * Updated jQuery cookie (Closes: #749332)
+    + Fixed homepage address.
+  * Rephrase History package description (Closes: #739418)
+    + Thanks Filipus Klutiero.
+  * Fancybox css using relative path and it should be absolute (Closes: #695943)
+    + Thanks Justin Hallett.
+  * Fixed privacy-breach-google-adsense
+  * Fixed privacy-breach-donation
+    + Removed unused code
+  * Changed standards-version to 3.9.5 (no changes)
+
+ -- Marcelo Jorge Vieira (metal) <metal@debian.org>  Sat, 28 Jun 2014 21:40:16 -0300
+
 jquery-goodies (9-1) unstable; urgency=low
 
   * Use uglifyjs to compress JavaScript instead of yui-compressor
