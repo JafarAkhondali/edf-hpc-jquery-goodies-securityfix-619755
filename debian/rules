@@ -3,31 +3,31 @@
 	dh $@
 
 override_dh_auto_build:
-	uglifyjs -o event-drag/jquery.event.drag.min.js event-drag/jquery.event.drag.js
-	uglifyjs -o event-drop/jquery.event.drop.min.js event-drop/jquery.event.drop.js
-	uglifyjs -o easing/jquery.easing.min.js easing/jquery.easing.js
-	uglifyjs -o easing/jquery.easing.compatibility.min.js easing/jquery.easing.compatibility.js
-	uglifyjs -o galleriffic/js/jquery.galleriffic.min.js galleriffic/js/jquery.galleriffic.js
-	uglifyjs -o meiomask/jquery.meiomask.min.js meiomask/jquery.meiomask.js
-	uglifyjs -o mousewheel/jquery.mousewheel.min.js mousewheel/jquery.mousewheel.js
-	uglifyjs -o jquery-history/jquery.history.min.js jquery-history/jquery.history.js
-	uglifyjs -o opacityrollover/jquery.opacityrollover.min.js opacityrollover/jquery.opacityrollover.js
-	uglifyjs -o jush/jush.min.js jush/jush.js
-	uglifyjs -o jfeed/build/dist/jquery.jfeed.min.js jfeed/build/dist/jquery.jfeed.js
-	uglifyjs -o form/jquery.form.min.js form/jquery.form.js
-	uglifyjs -o tipsy/src/javascripts/jquery.tipsy.min.js tipsy/src/javascripts/jquery.tipsy.js
-	uglifyjs -o fancybox/jquery.fancybox.min.js fancybox/jquery.fancybox.js
-	uglifyjs -o cookie/jquery.cookie.min.js cookie/jquery.cookie.js
-	uglifyjs -o metadata/jquery.metadata.min.js metadata/jquery.metadata.js
-	uglifyjs -o tablesorter/jquery.tablesorter.min.js tablesorter/jquery.tablesorter.js
-	uglifyjs -o tablesorter/addons/pager/jquery.tablesorter.pager.min.js tablesorter/addons/pager/jquery.tablesorter.pager.js
-	uglifyjs -o treetable/src/jquery.treeTable.min.js treetable/src/jquery.treeTable.js
-	uglifyjs -o livequery/jquery.livequery.min.js livequery/jquery.livequery.js
-	uglifyjs -o countdown/jquery.countdown.min.js countdown/jquery.countdown.js
-	uglifyjs -o resize/jquery.ba-resize.min.js resize/jquery.ba-resize.js
-	uglifyjs -o uploadify/jquery.uploadify.min.js uploadify/jquery.uploadify.js
-	uglifyjs -o slides/source/slides.min.jquery.js slides/source/slides.jquery.js
-	uglifyjs -o fullscreen/fullscreen/jquery.fullscreen.min.js fullscreen/fullscreen/jquery.fullscreen.js
+	cp event-drag/jquery.event.drag.js event-drag/jquery.event.drag.min.js
+	cp event-drop/jquery.event.drop.js event-drop/jquery.event.drop.min.js
+	cp easing/jquery.easing.js easing/jquery.easing.min.js
+	cp easing/jquery.easing.compatibility.js easing/jquery.easing.compatibility.min.js
+	cp galleriffic/js/jquery.galleriffic.js galleriffic/js/jquery.galleriffic.min.js
+	cp meiomask/jquery.meiomask.js meiomask/jquery.meiomask.min.js
+	cp mousewheel/jquery.mousewheel.js mousewheel/jquery.mousewheel.min.js
+	cp jquery-history/jquery.history.js jquery-history/jquery.history.min.js
+	cp opacityrollover/jquery.opacityrollover.js opacityrollover/jquery.opacityrollover.min.js
+	cp jush/jush.js jush/jush.min.js
+	cp jfeed/build/dist/jquery.jfeed.js jfeed/build/dist/jquery.jfeed.min.js
+	cp form/jquery.form.js form/jquery.form.min.js
+	cp tipsy/src/javascripts/jquery.tipsy.js tipsy/src/javascripts/jquery.tipsy.min.js
+	cp fancybox/jquery.fancybox.js fancybox/jquery.fancybox.min.js
+	cp cookie/jquery.cookie.js cookie/jquery.cookie.min.js
+	cp metadata/jquery.metadata.js metadata/jquery.metadata.min.js
+	cp tablesorter/jquery.tablesorter.js tablesorter/jquery.tablesorter.min.js
+	cp tablesorter/addons/pager/jquery.tablesorter.pager.js tablesorter/addons/pager/jquery.tablesorter.pager.min.js
+	cp treetable/src/jquery.treeTable.js treetable/src/jquery.treeTable.min.js
+	cp livequery/jquery.livequery.js livequery/jquery.livequery.min.js
+	cp countdown/jquery.countdown.js countdown/jquery.countdown.min.js
+	cp resize/jquery.ba-resize.js resize/jquery.ba-resize.min.js
+	cp uploadify/jquery.uploadify.js uploadify/jquery.uploadify.min.js
+	cp slides/source/slides.jquery.js slides/source/slides.min.jquery.js
+	cp fullscreen/fullscreen/jquery.fullscreen.js fullscreen/fullscreen/jquery.fullscreen.min.js
 
 override_dh_installchangelogs:
 	dh_installchangelogs --package libjs-jquery-cookie cookie/CHANGELOG.md
